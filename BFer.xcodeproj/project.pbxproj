@@ -15,6 +15,15 @@
 		669731CC24852F6A00520067 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 669731CA24852F6A00520067 /* LaunchScreen.storyboard */; };
 		669731D724852F6A00520067 /* BFerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669731D624852F6A00520067 /* BFerTests.swift */; };
 		669731E224852F6A00520067 /* BFerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669731E124852F6A00520067 /* BFerUITests.swift */; };
+		669731F024852FE800520067 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669731EF24852FE800520067 /* Extensions.swift */; };
+		669731F42485302A00520067 /* KeyboardLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669731F22485302A00520067 /* KeyboardLayoutView.swift */; };
+		669731F52485302A00520067 /* KeyboardLayoutView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 669731F32485302A00520067 /* KeyboardLayoutView.xib */; };
+		669731FD248530DD00520067 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669731FC248530DD00520067 /* KeyboardViewController.swift */; };
+		66973201248530DD00520067 /* Keyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 669731FA248530DD00520067 /* Keyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		66973206248531CF00520067 /* KeyboardLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669731F22485302A00520067 /* KeyboardLayoutView.swift */; };
+		66973207248531D300520067 /* KeyboardLayoutView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 669731F32485302A00520067 /* KeyboardLayoutView.xib */; };
+		66973208248531D700520067 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 669731EF24852FE800520067 /* Extensions.swift */; };
+		6697320924853A9900520067 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 669731C824852F6A00520067 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +41,28 @@
 			remoteGlobalIDString = 669731BB24852F6900520067;
 			remoteInfo = BFer;
 		};
+		669731FF248530DD00520067 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 669731B424852F6900520067 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 669731F9248530DD00520067;
+			remoteInfo = Keyboard;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		66973205248530DE00520067 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				66973201248530DD00520067 /* Keyboard.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		669731BC24852F6900520067 /* BFer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BFer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +79,13 @@
 		669731DD24852F6A00520067 /* BFerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BFerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		669731E124852F6A00520067 /* BFerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BFerUITests.swift; sourceTree = "<group>"; };
 		669731E324852F6A00520067 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		669731EF24852FE800520067 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		669731F22485302A00520067 /* KeyboardLayoutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardLayoutView.swift; sourceTree = "<group>"; };
+		669731F32485302A00520067 /* KeyboardLayoutView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeyboardLayoutView.xib; sourceTree = "<group>"; };
+		669731FA248530DD00520067 /* Keyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Keyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		669731FC248530DD00520067 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		669731FE248530DD00520067 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6697320A24853AD100520067 /* BFer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BFer.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +110,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		669731F7248530DD00520067 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -82,6 +126,7 @@
 				669731BE24852F6900520067 /* BFer */,
 				669731D524852F6A00520067 /* BFerTests */,
 				669731E024852F6A00520067 /* BFerUITests */,
+				669731FB248530DD00520067 /* Keyboard */,
 				669731BD24852F6900520067 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,6 +137,7 @@
 				669731BC24852F6900520067 /* BFer.app */,
 				669731D224852F6A00520067 /* BFerTests.xctest */,
 				669731DD24852F6A00520067 /* BFerUITests.xctest */,
+				669731FA248530DD00520067 /* Keyboard.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,10 +145,13 @@
 		669731BE24852F6900520067 /* BFer */ = {
 			isa = PBXGroup;
 			children = (
+				6697320A24853AD100520067 /* BFer.entitlements */,
 				669731BF24852F6900520067 /* AppDelegate.swift */,
 				669731C124852F6900520067 /* SceneDelegate.swift */,
 				669731C324852F6900520067 /* ViewController.swift */,
 				669731C524852F6900520067 /* Main.storyboard */,
+				669731EF24852FE800520067 /* Extensions.swift */,
+				669731F12485302A00520067 /* Views */,
 				669731C824852F6A00520067 /* Assets.xcassets */,
 				669731CA24852F6A00520067 /* LaunchScreen.storyboard */,
 				669731CD24852F6A00520067 /* Info.plist */,
@@ -128,6 +177,24 @@
 			path = BFerUITests;
 			sourceTree = "<group>";
 		};
+		669731F12485302A00520067 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				669731F22485302A00520067 /* KeyboardLayoutView.swift */,
+				669731F32485302A00520067 /* KeyboardLayoutView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		669731FB248530DD00520067 /* Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				669731FC248530DD00520067 /* KeyboardViewController.swift */,
+				669731FE248530DD00520067 /* Info.plist */,
+			);
+			path = Keyboard;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,10 +205,12 @@
 				669731B824852F6900520067 /* Sources */,
 				669731B924852F6900520067 /* Frameworks */,
 				669731BA24852F6900520067 /* Resources */,
+				66973205248530DE00520067 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				66973200248530DD00520067 /* PBXTargetDependency */,
 			);
 			name = BFer;
 			productName = BFer;
@@ -184,6 +253,23 @@
 			productReference = 669731DD24852F6A00520067 /* BFerUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		669731F9248530DD00520067 /* Keyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66973202248530DE00520067 /* Build configuration list for PBXNativeTarget "Keyboard" */;
+			buildPhases = (
+				669731F6248530DD00520067 /* Sources */,
+				669731F7248530DD00520067 /* Frameworks */,
+				669731F8248530DD00520067 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Keyboard;
+			productName = Keyboard;
+			productReference = 669731FA248530DD00520067 /* Keyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -205,6 +291,9 @@
 						CreatedOnToolsVersion = 11.4;
 						TestTargetID = 669731BB24852F6900520067;
 					};
+					669731F9248530DD00520067 = {
+						CreatedOnToolsVersion = 11.4;
+					};
 				};
 			};
 			buildConfigurationList = 669731B724852F6900520067 /* Build configuration list for PBXProject "BFer" */;
@@ -223,6 +312,7 @@
 				669731BB24852F6900520067 /* BFer */,
 				669731D124852F6A00520067 /* BFerTests */,
 				669731DC24852F6A00520067 /* BFerUITests */,
+				669731F9248530DD00520067 /* Keyboard */,
 			);
 		};
 /* End PBXProject section */
@@ -233,6 +323,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				669731CC24852F6A00520067 /* LaunchScreen.storyboard in Resources */,
+				669731F52485302A00520067 /* KeyboardLayoutView.xib in Resources */,
 				669731C924852F6A00520067 /* Assets.xcassets in Resources */,
 				669731C724852F6900520067 /* Main.storyboard in Resources */,
 			);
@@ -252,6 +343,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		669731F8248530DD00520067 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6697320924853A9900520067 /* Assets.xcassets in Resources */,
+				66973207248531D300520067 /* KeyboardLayoutView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -262,6 +362,8 @@
 				669731C424852F6900520067 /* ViewController.swift in Sources */,
 				669731C024852F6900520067 /* AppDelegate.swift in Sources */,
 				669731C224852F6900520067 /* SceneDelegate.swift in Sources */,
+				669731F42485302A00520067 /* KeyboardLayoutView.swift in Sources */,
+				669731F024852FE800520067 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +383,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		669731F6248530DD00520067 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				669731FD248530DD00520067 /* KeyboardViewController.swift in Sources */,
+				66973208248531D700520067 /* Extensions.swift in Sources */,
+				66973206248531CF00520067 /* KeyboardLayoutView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -293,6 +405,11 @@
 			isa = PBXTargetDependency;
 			target = 669731BB24852F6900520067 /* BFer */;
 			targetProxy = 669731DE24852F6A00520067 /* PBXContainerItemProxy */;
+		};
+		66973200248530DD00520067 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 669731F9248530DD00520067 /* Keyboard */;
+			targetProxy = 669731FF248530DD00520067 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -433,7 +550,9 @@
 		669731E724852F6B00520067 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BFer/BFer.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 339P82ZNV5;
 				INFOPLIST_FILE = BFer/Info.plist;
@@ -451,7 +570,9 @@
 		669731E824852F6B00520067 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BFer/BFer.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 339P82ZNV5;
 				INFOPLIST_FILE = BFer/Info.plist;
@@ -550,6 +671,44 @@
 			};
 			name = Release;
 		};
+		66973203248530DE00520067 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 339P82ZNV5;
+				INFOPLIST_FILE = Keyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.eita.BFer.Keyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		66973204248530DE00520067 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 339P82ZNV5;
+				INFOPLIST_FILE = Keyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.eita.BFer.Keyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -585,6 +744,15 @@
 			buildConfigurations = (
 				669731ED24852F6B00520067 /* Debug */,
 				669731EE24852F6B00520067 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66973202248530DE00520067 /* Build configuration list for PBXNativeTarget "Keyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66973203248530DE00520067 /* Debug */,
+				66973204248530DE00520067 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
